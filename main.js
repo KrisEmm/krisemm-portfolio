@@ -2416,7 +2416,7 @@ AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " Soy Ingeniero en Rob\u00F3tica Industrial y he trabajado como programador de robots industriales para la industrial automotriz. Sin embargo, mi pasi\u00F3n es crear sistemas y aplicaciones web. Recientemente comenc\u00E9 mi viaje como desarrollador backend y estoy buscando una oportunidad laboral. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " He estado trabajando en algunos proyectos personales publicados en mi repositorio de Github y trato de mantenerme actualizado sobre las \u00FAltimas tecnolog\u00EDas y herramientas tomando cursos en l\u00EDnea. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " He estado trabajando en algunos proyectos personales publicados en mi repositorio de Github, Ademas constantemente me mantengo actualizado sobre las \u00FAltimas tecnolog\u00EDas y herramientas tomando cursos en l\u00EDnea. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "p", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, " Mi objetivo es participar en la creaci\u00F3n de aplicaciones o sistemas que sean escalables y eficientes haciendo uso de arquitecturas limpias. ");
