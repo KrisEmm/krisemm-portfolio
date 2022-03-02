@@ -18,7 +18,7 @@ export class MenuComponent implements OnInit {
     this.show = !this.show;
     this.changeMenuIcon.emit(false);
     if (target === 'download') {
-      window.open(`/assets/files/CV-Cristian_Emmanuel_Castillo_Medina.pdf`, '_blank');
+      window.open(`https://krisemm.github.io/krisemm-portfolio/assets/files/CV-Cristian_Emmanuel_Castillo_Medina.pdf`, '_blank');
     } else {
       setTimeout(async () => {
        await this.router.navigate([target]);
