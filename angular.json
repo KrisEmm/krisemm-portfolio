@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PersonalPortfolioLastVersion": {
+    "Portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/PersonalPortfolioLastVersion",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "PersonalPortfolioLastVersion:build"
+            "browserTarget": "Portfolio:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "PersonalPortfolioLastVersion:build:production"
+              "browserTarget": "Portfolio:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PersonalPortfolioLastVersion:build"
+            "browserTarget": "Portfolio:build"
           }
         },
         "test": {
@@ -113,16 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "PersonalPortfolioLastVersion:serve"
+            "devServerTarget": "Portfolio:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "PersonalPortfolioLastVersion:serve:production"
+              "devServerTarget": "Portfolio:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "PersonalPortfolioLastVersion"
+  "defaultProject": "Portfolio"
 }
