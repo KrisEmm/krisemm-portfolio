@@ -1222,6 +1222,7 @@ class ContactComponent {
         };
     }
     ngOnInit() {
+        console.log(config);
         Object(_emailjs_browser__WEBPACK_IMPORTED_MODULE_1__["init"])(config.user_id);
         window.scroll({
             top: 0,
@@ -1241,7 +1242,6 @@ class ContactComponent {
                 this.isError = false;
             }
             catch (e) {
-                console.log(e);
                 this.isSent = true;
                 this.isError = true;
             }
