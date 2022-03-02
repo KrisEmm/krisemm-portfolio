@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href=\"https://krisemm.github.io/krisemm-portfolio/\"",
     "test": "ng test",
     "lint": "ng lint --fix",
     "e2e": "ng e2e",
