@@ -86,6 +86,12 @@
   border: 1px solid $first-light-color;
   padding: 1rem 1.2rem;
 }
+.portfolio_item_not_found{
+  font-family: "font-primary-control-1", sans-serif;
+  font-size: 1rem;
+  color: $second-color;
+  text-align: center;
+}
 .portfolio_item_name{
   font-family: "font-primary-title-2", sans-serif;
   font-size: 1rem;
