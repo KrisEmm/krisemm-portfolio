@@ -781,6 +781,32 @@ const config = {
 
 /***/ }),
 
+/***/ "2jcz":
+/*!******************************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/utils/validateParams.js ***!
+  \******************************************************************/
+/*! exports provided: validateParams */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "validateParams", function() { return validateParams; });
+const validateParams = (userID, serviceID, templateID) => {
+    if (!userID) {
+        throw 'The user ID is required. Visit https://dashboard.emailjs.com/admin/integration';
+    }
+    if (!serviceID) {
+        throw 'The service ID is required. Visit https://dashboard.emailjs.com/admin';
+    }
+    if (!templateID) {
+        throw 'The template ID is required. Visit https://dashboard.emailjs.com/admin/templates';
+    }
+    return true;
+};
+
+
+/***/ }),
+
 /***/ "32Ea":
 /*!********************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/operators/skipWhile.js ***!
@@ -931,6 +957,58 @@ class DelayMessage {
     }
 }
 //# sourceMappingURL=delay.js.map
+
+/***/ }),
+
+/***/ "3Fjq":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/methods/sendForm/sendForm.js ***!
+  \***********************************************************************/
+/*! exports provided: sendForm */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sendForm", function() { return sendForm; });
+/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../store/store */ "xKzw");
+/* harmony import */ var _utils_validateParams__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/validateParams */ "2jcz");
+/* harmony import */ var _api_sendPost__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../api/sendPost */ "4eSS");
+
+
+
+const findHTMLForm = (form) => {
+    let currentForm;
+    if (typeof form === 'string') {
+        currentForm = document.querySelector(form);
+    }
+    else {
+        currentForm = form;
+    }
+    if (!currentForm || currentForm.nodeName !== 'FORM') {
+        throw 'The 3rd parameter is expected to be the HTML form element or the style selector of form';
+    }
+    return currentForm;
+};
+/**
+ * Send a form the specific EmailJS service
+ * @param {string} serviceID - the EmailJS service ID
+ * @param {string} templateID - the EmailJS template ID
+ * @param {string | HTMLFormElement} form - the form element or selector
+ * @param {string} userID - the EmailJS user ID
+ * @returns {Promise<EmailJSResponseStatus>}
+ */
+const sendForm = (serviceID, templateID, form, userID) => {
+    const uID = userID || _store_store__WEBPACK_IMPORTED_MODULE_0__["store"]._userID;
+    const currentForm = findHTMLForm(form);
+    Object(_utils_validateParams__WEBPACK_IMPORTED_MODULE_1__["validateParams"])(uID, serviceID, templateID);
+    const formData = new FormData(currentForm);
+    formData.append('lib_version', '3.4.0');
+    formData.append('service_id', serviceID);
+    formData.append('template_id', templateID);
+    formData.append('user_id', uID);
+    return Object(_api_sendPost__WEBPACK_IMPORTED_MODULE_2__["sendPost"])('/api/v1.0/email/send-form', formData);
+};
+
 
 /***/ }),
 
@@ -8521,6 +8599,46 @@ function dispatchError(arg) {
 
 /***/ }),
 
+/***/ "4eSS":
+/*!**********************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/api/sendPost.js ***!
+  \**********************************************************/
+/*! exports provided: sendPost */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sendPost", function() { return sendPost; });
+/* harmony import */ var _models_EmailJSResponseStatus__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/EmailJSResponseStatus */ "O3T2");
+/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../store/store */ "xKzw");
+
+
+const sendPost = (url, data, headers = {}) => {
+    return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.addEventListener('load', ({ target }) => {
+            const responseStatus = new _models_EmailJSResponseStatus__WEBPACK_IMPORTED_MODULE_0__["EmailJSResponseStatus"](target);
+            if (responseStatus.status === 200 || responseStatus.text === 'OK') {
+                resolve(responseStatus);
+            }
+            else {
+                reject(responseStatus);
+            }
+        });
+        xhr.addEventListener('error', ({ target }) => {
+            reject(new _models_EmailJSResponseStatus__WEBPACK_IMPORTED_MODULE_0__["EmailJSResponseStatus"](target));
+        });
+        xhr.open('POST', _store_store__WEBPACK_IMPORTED_MODULE_1__["store"]._origin + url, true);
+        Object.keys(headers).forEach((key) => {
+            xhr.setRequestHeader(key, headers[key]);
+        });
+        xhr.send(data);
+    });
+};
+
+
+/***/ }),
+
 /***/ "4f8F":
 /*!***************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/operators/race.js ***!
@@ -10201,6 +10319,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isArray", function() { return isArray; });
 const isArray = (() => Array.isArray || ((x) => x && typeof x.length === 'number'))();
 //# sourceMappingURL=isArray.js.map
+
+/***/ }),
+
+/***/ "E7Yh":
+/*!***************************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/methods/init/init.js ***!
+  \***************************************************************/
+/*! exports provided: init */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
+/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../store/store */ "xKzw");
+
+/**
+ * Initiation
+ * @param {string} userID - set the EmailJS user ID
+ * @param {string} origin - set the EmailJS origin
+ */
+const init = (userID, origin = 'https://api.emailjs.com') => {
+    _store_store__WEBPACK_IMPORTED_MODULE_0__["store"]._userID = userID;
+    _store_store__WEBPACK_IMPORTED_MODULE_0__["store"]._origin = origin;
+};
+
 
 /***/ }),
 
@@ -12076,6 +12219,26 @@ class RaceSubscriber extends _OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__["Oute
 
 /***/ }),
 
+/***/ "O3T2":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/models/EmailJSResponseStatus.js ***!
+  \**************************************************************************/
+/*! exports provided: EmailJSResponseStatus */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmailJSResponseStatus", function() { return EmailJSResponseStatus; });
+class EmailJSResponseStatus {
+    constructor(httpResponse) {
+        this.status = httpResponse.status;
+        this.text = httpResponse.responseText;
+    }
+}
+
+
+/***/ }),
+
 /***/ "O4y0":
 /*!*********************************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/observable/SubscribeOnObservable.js ***!
@@ -12304,6 +12467,48 @@ class InnerRefCountSubscription extends _Subscription__WEBPACK_IMPORTED_MODULE_1
     }
 }
 //# sourceMappingURL=groupBy.js.map
+
+/***/ }),
+
+/***/ "OrJ1":
+/*!***************************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/methods/send/send.js ***!
+  \***************************************************************/
+/*! exports provided: send */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "send", function() { return send; });
+/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../store/store */ "xKzw");
+/* harmony import */ var _utils_validateParams__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/validateParams */ "2jcz");
+/* harmony import */ var _api_sendPost__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../api/sendPost */ "4eSS");
+
+
+
+/**
+ * Send a template to the specific EmailJS service
+ * @param {string} serviceID - the EmailJS service ID
+ * @param {string} templateID - the EmailJS template ID
+ * @param {object} templatePrams - the template params, what will be set to the EmailJS template
+ * @param {string} userID - the EmailJS user ID
+ * @returns {Promise<EmailJSResponseStatus>}
+ */
+const send = (serviceID, templateID, templatePrams, userID) => {
+    const uID = userID || _store_store__WEBPACK_IMPORTED_MODULE_0__["store"]._userID;
+    Object(_utils_validateParams__WEBPACK_IMPORTED_MODULE_1__["validateParams"])(uID, serviceID, templateID);
+    const params = {
+        lib_version: '3.4.0',
+        user_id: uID,
+        service_id: serviceID,
+        template_id: templateID,
+        template_params: templatePrams,
+    };
+    return Object(_api_sendPost__WEBPACK_IMPORTED_MODULE_2__["sendPost"])('/api/v1.0/email/send', JSON.stringify(params), {
+        'Content-type': 'application/json',
+    });
+};
+
 
 /***/ }),
 
@@ -54330,6 +54535,37 @@ _getGSAP() && gsap.registerPlugin(MotionPathPlugin);
 
 /***/ }),
 
+/***/ "nW6l":
+/*!***************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/index.js ***!
+  \***************************************************/
+/*! exports provided: init, send, sendForm, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _methods_init_init__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./methods/init/init */ "E7Yh");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "init", function() { return _methods_init_init__WEBPACK_IMPORTED_MODULE_0__["init"]; });
+
+/* harmony import */ var _methods_send_send__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./methods/send/send */ "OrJ1");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "send", function() { return _methods_send_send__WEBPACK_IMPORTED_MODULE_1__["send"]; });
+
+/* harmony import */ var _methods_sendForm_sendForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./methods/sendForm/sendForm */ "3Fjq");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "sendForm", function() { return _methods_sendForm_sendForm__WEBPACK_IMPORTED_MODULE_2__["sendForm"]; });
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    init: _methods_init_init__WEBPACK_IMPORTED_MODULE_0__["init"],
+    send: _methods_send_send__WEBPACK_IMPORTED_MODULE_1__["send"],
+    sendForm: _methods_sendForm_sendForm__WEBPACK_IMPORTED_MODULE_2__["sendForm"],
+});
+
+
+/***/ }),
+
 /***/ "nYR2":
 /*!*******************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/operators/finalize.js ***!
@@ -73288,6 +73524,23 @@ class RefCountSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_0__["Subsc
     }
 }
 //# sourceMappingURL=refCount.js.map
+
+/***/ }),
+
+/***/ "xKzw":
+/*!*********************************************************!*\
+  !*** ./node_modules/@emailjs/browser/es/store/store.js ***!
+  \*********************************************************/
+/*! exports provided: store */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "store", function() { return store; });
+const store = {
+    _origin: 'https://api.emailjs.com',
+};
+
 
 /***/ }),
 
