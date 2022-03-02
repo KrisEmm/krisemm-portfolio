@@ -1,0 +1,263 @@
+@import 'src/theme';
+
+.projects {
+  display: flex;
+}
+
+.projects-tab-is-active {
+  color: $second-dark-color !important;
+  font-size: 1.2rem !important;
+}
+
+.projects-tabs {
+  padding: 0 2rem;
+
+
+  ul {
+    list-style: none;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 2rem;
+    padding-right: 3rem;
+    border-right: 1px solid $first-color;
+    li {
+      font-family: "font-primary-control-1", sans-serif;
+      font-size: 1.1rem;
+      color: $first-color;
+      cursor: pointer;
+      padding: 1rem 0;
+    }
+
+    li:hover {
+
+      color: $second-dark-color;
+    }
+  }
+}
+
+.projects-column-a {
+  flex-basis: 40%;
+}
+
+.projects-column-b {
+  flex-basis: 60%;
+}
+
+.projects_overline {
+  font-family: "font-primary-subtitle-2", sans-serif;
+  font-size: 1.2rem;
+  color: $first-color;
+  margin-left: 4rem;
+  display: block;
+  text-align: center;
+}
+
+.projects_caption {
+  font-family: "font-primary-title-3", sans-serif;
+  font-size: 1.6rem;
+  color: $second-dark-color;
+  text-align: center;
+
+
+  &::before {
+    background-color: $second-dark-color;
+    content: "";
+    display: block;
+    width: 8rem;
+    height: 1px;
+    margin-left: 5rem;
+  }
+}
+
+.project-featured {
+  padding: 0.5rem 2rem 0;
+}
+
+.project-featured-name {
+  font-family: "font-primary-subtitle-3", sans-serif;
+  font-size: 1.4rem;
+  color: $second-light-color;
+  padding-bottom: 0.5rem;
+}
+
+.project-featured-subtitles {
+  font-family: "font-primary-title-2", sans-serif;
+  font-size: 1rem;
+  color: $second-color;
+  padding-left: 0.5rem;
+}
+
+.project-featured-paragraphs {
+  font-family: "font-primary-control-1", sans-serif;
+  font-size: 1rem;
+  color: $second-color;
+  padding: 0 1rem;
+}
+
+.project-featured-links {
+  display: flex;
+
+  a {
+    font-family: "font-primary-control-1", sans-serif;
+    font-size: 0.95rem;
+    color: $first-color;
+    padding: 0.5rem 1rem;
+  }
+
+  a:hover {
+    color: $second-dark-color;
+  }
+}
+
+.project-featured-lists {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "font-primary-control-1", sans-serif;
+  font-size: 0.95rem;
+  color: $second-color;
+  list-style-position: inside;
+  padding: 1rem 0;
+  li {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.project-featured-list-features {
+  display: block;
+}
+
+.working {
+  padding-top: 2rem;
+}
+
+.working-projects-list {
+  list-style: none;
+  padding: 1rem 1rem 0;
+
+}
+
+.working-project-item {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.working-project-name {
+  font-family: "font-primary-title-2", sans-serif;
+  font-size: 1rem;
+  color: $second-color;
+}
+
+.working-project-paragraph {
+  font-family: "font-primary-control-1", sans-serif;
+  font-size: 1rem;
+  color: $second-color;
+}
+
+.working-project-links {
+  margin-bottom: 0.5rem;
+
+  a {
+    font-family: "font-primary-control-1", sans-serif;
+    font-size: 0.9rem;
+    color: $first-color;
+  }
+  a:hover{
+    color: $second-color;
+  }
+}
+
+.working-project-tags {
+  list-style: none;
+  display: flex;
+  padding-top: 0.1rem;
+
+  li {
+    font-family: "font-primary-control-1", sans-serif;
+    font-size: 0.9rem;
+    color: $second-color;
+    padding: 0.1rem 1rem;
+    margin-right: 0.5rem;
+    border: 1px solid $first-light-color;
+    border-radius: 2%;
+
+  }
+
+}
+@include mediaQuery("mobile-portrait"){
+  .projects {
+    flex-direction: column;
+  }
+  .project-featured {
+    padding: 1rem 1rem 0;
+  }
+  .projects-tabs{
+    ul{
+      height: auto;
+    }
+  }
+  .working {
+    padding-top: 1rem;
+  }
+  .working-project-tags {
+    flex-wrap: wrap;
+    li{
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+@include mediaQuery("mobile-landscape"){
+  .projects {
+    flex-direction: column;
+  }
+  .project-featured {
+    padding: 1rem 1rem 0;
+  }
+  .projects-tabs{
+    ul{
+      height: auto;
+    }
+  }
+  .working {
+    padding-top: 1rem;
+  }
+  .working-project-tags {
+    flex-wrap: wrap;
+    li{
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+@include mediaQuery("tablet-portrait"){
+  .projects {
+    flex-direction: column;
+  }
+  .project-featured {
+    padding: 1rem 1rem 0;
+  }
+  .projects-tabs{
+    ul{
+      height: auto;
+    }
+  }
+  .working {
+    padding-top: 1rem;
+  }
+  .working-project-tags {
+    flex-wrap: wrap;
+    li{
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+@include mediaQuery("tablet-landscape"){
+  .projects {
+   height: 100vh;
+  }
+}
+@include mediaQuery("desktop"){
+}
+@include mediaQuery("full"){
+}

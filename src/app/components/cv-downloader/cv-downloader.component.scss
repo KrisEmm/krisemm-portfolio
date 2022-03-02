@@ -1,0 +1,43 @@
+@import 'src/theme';
+.cv_downloader{
+  position: absolute;
+  bottom: 0;
+  margin-left: 1.5rem;
+  &_link{
+    color: $second-light-color;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-bottom: 1.5rem;
+    &:hover{
+      color: $first-color;
+      cursor: pointer;
+    }
+  }
+  &_line{
+    display: block;
+    width: 1px;
+    height: 200px;
+    margin: 1.5rem auto;
+    background-color: $second-color;
+  }
+}
+@include mediaQuery("mobile-portrait"){
+  .cv_downloader{
+    display: none;
+  }
+}
+@include mediaQuery("mobile-landscape"){
+  .cv_downloader{
+    display: none;
+  }
+}
+@include mediaQuery("tablet-portrait"){
+  .cv_downloader{
+    display: none;
+  }
+}
+@include mediaQuery("tablet-landscape"){
+  .cv_downloader{
+    display: none;
+  }
+}

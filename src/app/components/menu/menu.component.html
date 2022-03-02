@@ -1,0 +1,21 @@
+<nav class="menu" [ngClass]="{'show-menu': show}">
+  <ul class="menu_navigation">
+    <li class="menu_item" (click)="goto('home')">Home</li>
+    <li class="menu_item" (click)="goto('about')">About</li>
+    <li class="menu_item" (click)="goto('skills')">Skills</li>
+    <li class="menu_item" (click)="goto('projects')">Projects</li>
+    <li class="menu_item" (click)="goto('contact')">Contact</li>
+    <li class="menu_item" (click)="goto('download')">Download CV</li>
+  </ul>
+  <div class="menu_links">
+    <a href="https://github.com/krisemm" target="_blank">
+      <i class="fab fa-github fa-lg"></i>
+    </a>
+    <a href="https://twitter.com/_kristianEmm" target="_blank">
+      <i class="fab fa-twitter fa-lg"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/krisemm" target="_blank">
+      <i class="fab fa-linkedin fa-lg"></i>
+    </a>
+  </div>
+</nav>

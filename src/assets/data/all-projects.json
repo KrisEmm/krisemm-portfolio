@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Movie Search App",
+    "description": "Find the latest trending movies to binge watch on your weekend! This app use typescript and spring",
+    "links": [
+      {
+        "value": "source code",
+        "url": ""
+      }
+    ],
+    "tags": [
+      "NodeJs",
+      "Express",
+      "Angular",
+      "TMDb API"
+    ]
+  },
+  {
+    "name": "Ecommerce App",
+    "description": "This is multi-tenant t-shirt shops",
+    "links": [
+      {
+        "value": "source code",
+        "url": ""
+      }
+    ],
+    "tags": [
+      "NodeJs",
+      "Typescript",
+      "Express",
+      "React",
+      "Redux"
+    ]
+  },
+  {
+    "name": "DevJob App",
+    "description": "Find the latest trending jobs to binge watch on your weekend!",
+    "links": [
+      {
+        "value": "source code",
+        "url": ""
+      }
+    ],
+    "tags": [
+      "Java",
+      "Spring",
+      "Angular",
+      "Redux"
+    ]
+  },
+  {
+    "name": "Typescript Domain driven Design template",
+    "description": "Find the latest trending jobs to binge watch on your weekend!",
+    "links": [
+      {
+        "value": "source code",
+        "url": ""
+      }
+    ],
+    "tags": [
+      "Java",
+      "Spring",
+      "Angular"
+    ]
+  }
+]

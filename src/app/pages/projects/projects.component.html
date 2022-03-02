@@ -1,0 +1,83 @@
+<div class="projects">
+    <div class="projects-column-a">
+        <div class="projects-tabs">
+            <h2 class="projects_overline animate__animated animate__fadeInRight">Projects</h2>
+            <h1 class="projects_caption animate__animated animate__fadeInLeft">Some Things I've
+                Built</h1>
+            <ul>
+                <li #listTabs class="projects-tab-is-active animate__animated animate__fadeInUp animate__delay-1s"
+                    (click)="handleChangeTab($event,'latest-project')"
+                >Latest Project
+                </li>
+                <li #listTabs (click)="handleChangeTab($event,'working')"
+                    class="animate__animated animate__fadeInUp animate__delay-2s"
+                >Currently Working In
+                </li>
+                <li (click)="handleClick()" class="animate__animated animate__fadeInUp animate__delay-3s">
+                    View All Portfolio
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="projects-column-b">
+        <div class="working animate__animated animate__fadeIn"
+             [ngStyle]="{'display': tabName==='working' ? 'block' : 'none'}"
+             >
+            <ul class="working-projects-list">
+               <li class="working-project-item" *ngFor="let project of projects">
+                   <h3 class="working-project-name">
+                       {{project.name}}
+                   </h3>
+                   <p class="working-project-paragraph">
+                      {{project.description}}
+                   </p>
+                   <div class="working-project-links">
+                       <a href="{{link.url}}" *ngFor="let link of project.links">{{link.value}}</a>
+                   </div>
+                   <ul class="working-project-tags">
+                       <li *ngFor="let tag of project.tags">{{tag}}</li>
+                   </ul>
+               </li>
+            </ul>
+        </div>
+        <div #latestProject class="project-featured animate__animated animate__fadeIn animate__delay-1s"
+            [ngStyle]="{'display': tabName==='latest-project' ? 'block' :'none'}"
+        >
+            <h2 class="project-featured-name">Youtufy</h2>
+            <h4 class="project-featured-subtitles">
+                Overview
+            </h4>
+            <p class="project-featured-paragraphs">
+                This was a fun project that was meant to show off more of my technical skills. It displays my ability
+                to work through a complex problem and find a solution using appropriate data structures while doing so.
+            </p>
+            <div class="project-featured-links">
+                <a href="">Preview</a>
+                <a href="">How to Works</a>
+                <a href="">Source Code</a>
+            </div>
+            <h4 class="project-featured-subtitles">
+                Technologies Used
+            </h4>
+            <ul class="project-featured-lists">
+                <li>ReactJS</li>
+                <li>NodeJS</li>
+                <li>Typescript</li>
+                <li>ExpressJS</li>
+                <li>Jest</li>
+                <li>PostgreSQL</li>
+                <li>Webpack</li>
+                <li>Babel</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Sass</li>
+            </ul>
+            <h4 class="project-featured-subtitles">Notable Features</h4>
+            <ul class="project-featured-lists project-featured-list-features">
+                <li>Efficiently calculates neighboring mines to display tile numbers</li>
+                <li>Right click to flag a mine</li>
+                <li>Reveals all mines when game is lost. Specify the mine that cost the game.</li>
+            </ul>
+        </div>
+    </div>
+</div>

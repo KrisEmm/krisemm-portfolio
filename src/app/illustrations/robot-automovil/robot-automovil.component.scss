@@ -1,0 +1,10 @@
+@import 'src/theme';
+#stain_one,#stain_two{
+  fill:#CCCCCC;
+}
+#paint-gun{
+  fill: $background-color;
+}
+svg{
+  width: 100%;
+}

@@ -1,0 +1,223 @@
+@import 'src/theme';
+
+
+.about-info-text{
+  width: 58%;
+  height: 100%;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+}
+.about-text{
+  padding: 0.5rem 1rem;
+  position: relative;
+
+}
+.about-info-text:after{
+  content: "";
+  display: block;
+  width: 80%;
+  height: 33rem;
+  position: absolute;
+  top: -1rem;
+  left: 200px;
+  z-index: -2;
+  opacity: 0.5;
+  background-color: #F1F1F1;
+  background-image: radial-gradient(#909090 1.75px, #F1F1F1 1.75px);
+  background-size: 40px 40px;
+}
+.about-paragraph{
+  font-family: "font-primary-control-1", sans-serif;
+  font-size: 1.1rem;
+  color: $second-color;
+  &::first-letter {
+    font-size: 1.5rem;
+    color: $second-dark-color;
+  }
+}
+
+
+.about_caption {
+  font-family: "font-primary-title-3", sans-serif;
+  font-size: 1.8rem;
+  color: $second-dark-color;
+  text-align: center;
+  &::after {
+    background-color: $second-color;
+    content: "";
+    margin: 0 auto;
+    display: block;
+    width: 4rem;
+    height: 1px;
+  }
+}
+
+.about_overline {
+  font-family: "font-primary-subtitle-2", sans-serif;
+  font-size: 1rem;
+  color: $first-color;
+  line-height: 0.2;
+  text-align: center;
+}
+
+.about_subtitle {
+  font-family: "font-primary-title-3", sans-serif;
+  font-size: 2.1rem;
+  color: $second-dark-color;
+
+  &::after {
+    background-color: $second-color;
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 1px;
+  }
+}
+
+@include mediaQuery("mobile-portrait") {
+  .about-info-text{
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+  }
+  .about {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+
+  }
+  .about-image{
+    display: none;
+  }
+  .about-paragraph{
+    font-size: 1rem;
+  }
+  .about-info-text:after{
+    left: 0;
+  }
+}
+
+@include mediaQuery("mobile-landscape") {
+  .about-info-text{
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+  }
+  .about {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+
+  }
+  .about-image{
+    display: none;
+  }
+  .about-paragraph{
+    font-size: 1rem;
+  }
+  .about-info-text:after{
+    left: 0;
+  }
+}
+
+@include mediaQuery("tablet-portrait") {
+  .about-info-text{
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+  }
+  .about {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+
+  }
+  .about-image{
+    display: none;
+  }
+  .about-paragraph{
+    font-size: 1rem;
+  }
+  .about-info-text:after{
+    left: 0;
+  }
+}
+
+@include mediaQuery("tablet-landscape") {
+  .about-info-text{
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+  }
+  .about {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+
+  }
+  .about-image{
+    display: none;
+  }
+  .about-paragraph{
+    font-size: 1rem;
+  }
+  .about-info-text:after{
+    left: 0;
+  }
+}
+
+@include mediaQuery("desktop") {
+  .about-text{
+    backdrop-filter: blur(50px);
+
+  }
+  .about {
+    position: absolute;
+    left: 0;
+    bottom: 4rem;
+    display: block;
+    width: 155%;
+    z-index: -1;
+    overflow-x: scroll;
+
+  }
+  .about-image {
+    position: absolute;
+    top: -2rem;
+    right: 8rem;
+    width: 20%;
+  }
+}
+
+@include mediaQuery("full") {
+  .about-text{
+    backdrop-filter: blur(50px);
+
+  }
+  .about {
+    position: absolute;
+    left: 0;
+    bottom: 4rem;
+    display: block;
+    width: 155%;
+    z-index: -1;
+    overflow-x: scroll;
+
+  }
+  .about-image {
+    position: absolute;
+    top: -2rem;
+    right: 8rem;
+    width: 20%;
+  }
+}

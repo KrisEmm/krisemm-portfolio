@@ -1,0 +1,48 @@
+@import 'src/theme';
+@import '../../../../node_modules/animate.css/animate.min.css';
+.menu{
+  background-color: $background-color;
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  overflow-y: auto;
+  position: fixed;
+  top: 70px;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: transform 1s;
+}
+.show-menu{
+  transform: translateX(0%);
+}
+.menu_navigation{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu_item{
+  padding: 1rem;
+  color:$second-dark-color;
+  font-size: 1.4rem;
+  font-family: "font-primary-control-1", sans-serif;
+}
+.menu_links{
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  a{
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    &:first-child{
+      margin-left: 0;
+    }
+    i{
+      color:$second-color;
+    }
+  }
+
+}

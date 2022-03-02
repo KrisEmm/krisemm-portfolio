@@ -1,0 +1,52 @@
+$breakpoints:(
+    "mobile-portrait":(
+        "minWidth": 0px,
+        "maxWidth": 599px,
+    ),
+    "mobile-landscape":(
+        "minWidth": 600px,
+        "maxWidth": 767px,
+    ),
+    "tablet-portrait":(
+        "minWidth": 768px,
+        "maxWidth": 899px,
+    ),
+    "tablet-landscape":(
+        "minWidth": 900px,
+        "maxWidth": 1209px,
+    ),
+    "desktop":(
+        "minWidth": 1210px,
+        "maxWidth": 1399px,
+    ),
+    "full":(
+        "minWidth": 1400px,
+        "maxWidth": 3000px,
+    )
+);
+
+@mixin mediaQuery($breakpoint){
+    @if map-has-key($map: $breakpoints, $key: $breakpoint){
+        $minWidth:map-get($breakpoints, $breakpoint, "minWidth" );
+        $maxWidth:map-get($breakpoints, $breakpoint, "maxWidth" );
+        @media screen and (min-width: $minWidth) and (max-width: $maxWidth){
+            @content;
+        }
+    }
+}
+@mixin mediaQueryCustom($breakpoint-min, $breakpoint-max){
+    @media screen and (min-width: $breakpoint-min) and (max-width: $breakpoint-max){
+         @content;
+    }
+}
+@mixin mediaQueryNoHover(){
+    @media (hover:none){
+        @content;
+    }
+
+}
+@mixin mediaQueryHover(){
+    @media (hover){
+        @content;
+    }
+}

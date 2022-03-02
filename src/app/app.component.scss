@@ -1,0 +1,32 @@
+@import 'src/theme';
+main{
+  margin-left: 3rem;
+  margin-right: 3rem;
+  position: relative;
+}
+@include mediaQuery("mobile-portrait"){
+  main{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@include mediaQuery("mobile-landscape"){
+  main{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@include mediaQuery("tablet-portrait"){
+}
+@include mediaQuery("tablet-landscape"){
+}
+@include mediaQuery("desktop"){
+  main{
+    height: 100vh;
+  }
+}
+@include mediaQuery("full"){
+  main{
+    height: 100vh;
+  }
+}

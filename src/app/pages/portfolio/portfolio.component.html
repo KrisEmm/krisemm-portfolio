@@ -1,0 +1,197 @@
+<div #portfolio class="portfolio">
+    <h1 class="portfolio_title animate__animated animate__fadeInDown">
+        Portfolio
+    </h1>
+    <h2 class="portfolio_subtitle animate__animated animate__fadeInUp">
+        If you can imagine it, you can program it.
+    </h2>
+    <div class="animate__animated animate__fadeInUp animate__delay-1s">
+        <div class="portfolio_search ">
+            <input type="search" name="" id="" placeholder="Search..." (input)="handleInputChange($event)">
+            <p class="portfolio_filter_by_tags"
+               (click)="handleClickTagFilter()">{{showTagFilter ? 'hide tags' : 'filter by tags'}}</p>
+        </div>
+        <ul class="portfolio_list_basic_filters"
+            [ngStyle]="{'display': showTagFilter ? 'flex' : 'none'}"
+        >
+            <li #defaultTag (click)="handleClickTag($event, 'All')"
+                class="portfolio_basic_filter_item portfolio_basic_filter_item-active">All
+            </li>
+            <li (click)="handleClickTag($event, 'Web')"
+                class="portfolio_basic_filter_item">Web
+            </li>
+            <li (click)="handleClickTag($event, 'Api')"
+                class="portfolio_basic_filter_item">Api
+            </li>
+            <li (click)="handleClickTag($event, 'Javascript')"
+                class="portfolio_basic_filter_item">Javascript
+            </li>
+            <li (click)="handleClickTag($event, 'Typescript')"
+                class="portfolio_basic_filter_item">Typescript
+            </li>
+            <li (click)="handleClickTag($event, 'Nodejs')"
+                class="portfolio_basic_filter_item">Nodejs
+            </li>
+            <li (click)="handleClickTag($event, 'Express')"
+                class="portfolio_basic_filter_item">Express
+            </li>
+            <li (click)="handleClickTag($event, 'Angular')"
+                class="portfolio_basic_filter_item">Angular
+            </li>
+            <li (click)="handleClickTag($event, 'React')"
+                class="portfolio_basic_filter_item">React
+            </li>
+            <li (click)="handleClickTag($event, 'Spring Boot')"
+                class="portfolio_basic_filter_item">Spring Boot
+            </li>
+            <li (click)="handleClickTag($event, 'Java')"
+                class="portfolio_basic_filter_item">Java
+            </li>
+            <li (click)="handleClickTag($event, 'Html')"
+                class="portfolio_basic_filter_item">Html
+            </li>
+            <li (click)="handleClickTag($event, 'CSS')"
+                class="portfolio_basic_filter_item">CSS
+            </li>
+            <li (click)="handleClickTag($event, 'Sass')"
+                class="portfolio_basic_filter_item">Sass
+            </li>
+        </ul>
+    </div>
+    <ul class="portfolio_list animate__animated animate__fadeInUp animate__delay-2s">
+        <li class="portfolio_item" *ngFor="let project of projects">
+            <h3 class="portfolio_item_name">
+                {{project.name}}
+            </h3>
+            <p class="portfolio_item_paragraph">
+                {{project.description}}
+            </p>
+            <div class="portfolio_item_links" >
+                <a href="{{link.url}}" *ngFor="let link of project.links">{{link.value}}</a>
+            </div>
+            <ul class="portfolio_item_tags" >
+                <li *ngFor="let tag of project.tags">{{tag}}</li>
+            </ul>
+        </li>
+<!--        <li class="portfolio_item">-->
+<!--            <h3 class="portfolio_item_name">-->
+<!--                Movie Search App-->
+<!--            </h3>-->
+<!--            <p class="portfolio_item_paragraph">-->
+<!--                Find the latest trending movies to binge watch on your weekend!-->
+<!--            </p>-->
+<!--            <div class="portfolio_item_links">-->
+<!--                <a href="">source code</a>-->
+<!--            </div>-->
+<!--            <ul class="portfolio_item_tags">-->
+<!--                <li>NodeJs</li>-->
+<!--                <li>Express</li>-->
+<!--                <li>Angular</li>-->
+<!--                <li>TMDb API</li>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li class="portfolio_item">-->
+<!--            <h3 class="portfolio_item_name">-->
+<!--                Movie Search App-->
+<!--            </h3>-->
+<!--            <p class="portfolio_item_paragraph">-->
+<!--                Find the latest trending movies to binge watch on your weekend!-->
+<!--            </p>-->
+<!--            <div class="portfolio_item_links">-->
+<!--                <a href="">source code</a>-->
+<!--            </div>-->
+<!--            <ul class="portfolio_item_tags">-->
+<!--                <li>NodeJs</li>-->
+<!--                <li>Express</li>-->
+<!--                <li>Angular</li>-->
+<!--                <li>TMDb API</li>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li class="portfolio_item">-->
+<!--            <h3 class="portfolio_item_name">-->
+<!--                Movie Search App-->
+<!--            </h3>-->
+<!--            <p class="portfolio_item_paragraph">-->
+<!--                Find the latest trending movies to binge watch on your weekend!-->
+<!--            </p>-->
+<!--            <div class="portfolio_item_links">-->
+<!--                <a href="">source code</a>-->
+<!--            </div>-->
+<!--            <ul class="portfolio_item_tags">-->
+<!--                <li>NodeJs</li>-->
+<!--                <li>Express</li>-->
+<!--                <li>Angular</li>-->
+<!--                <li>TMDb API</li>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li class="portfolio_item">-->
+<!--            <h3 class="portfolio_item_name">-->
+<!--                Movie Search App-->
+<!--            </h3>-->
+<!--            <p class="portfolio_item_paragraph">-->
+<!--                Find the latest trending movies to binge watch on your weekend!-->
+<!--            </p>-->
+<!--            <div class="portfolio_item_links">-->
+<!--                <a href="">source code</a>-->
+<!--            </div>-->
+<!--            <ul class="portfolio_item_tags">-->
+<!--                <li>NodeJs</li>-->
+<!--                <li>Express</li>-->
+<!--                <li>Angular</li>-->
+<!--                <li>TMDb API</li>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li class="portfolio_item">-->
+<!--            <h3 class="portfolio_item_name">-->
+<!--                Movie Search App-->
+<!--            </h3>-->
+<!--            <p class="portfolio_item_paragraph">-->
+<!--                Find the latest trending movies to binge watch on your weekend!-->
+<!--            </p>-->
+<!--            <div class="portfolio_item_links">-->
+<!--                <a href="">source code</a>-->
+<!--            </div>-->
+<!--            <ul class="portfolio_item_tags">-->
+<!--                <li>NodeJs</li>-->
+<!--                <li>Express</li>-->
+<!--                <li>Angular</li>-->
+<!--                <li>TMDb API</li>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li class="portfolio_item">-->
+<!--            <h3 class="portfolio_item_name">-->
+<!--                Movie Search App-->
+<!--            </h3>-->
+<!--            <p class="portfolio_item_paragraph">-->
+<!--                Find the latest trending movies to binge watch on your weekend!-->
+<!--            </p>-->
+<!--            <div class="portfolio_item_links">-->
+<!--                <a href="">source code</a>-->
+<!--            </div>-->
+<!--            <ul class="portfolio_item_tags">-->
+<!--                <li>NodeJs</li>-->
+<!--                <li>Express</li>-->
+<!--                <li>Angular</li>-->
+<!--                <li>TMDb API</li>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li class="portfolio_item">-->
+<!--            <h3 class="portfolio_item_name">-->
+<!--                Movie Search App-->
+<!--            </h3>-->
+<!--            <p class="portfolio_item_paragraph">-->
+<!--                Find the latest trending movies to binge watch on your weekend!-->
+<!--            </p>-->
+<!--            <div class="portfolio_item_links">-->
+<!--                <a href="">source code</a>-->
+<!--            </div>-->
+<!--            <ul class="portfolio_item_tags">-->
+<!--                <li>NodeJs</li>-->
+<!--                <li>Express</li>-->
+<!--                <li>Angular</li>-->
+<!--                <li>TMDb API</li>-->
+<!--            </ul>-->
+<!--        </li>-->
+
+    </ul>
+</div>

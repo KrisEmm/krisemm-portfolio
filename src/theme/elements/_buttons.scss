@@ -1,0 +1,65 @@
+.button{
+    font-family: "font-primary-control-1", sans-serif;
+    font-size: 0.9rem ;
+    text-transform: uppercase;
+    padding: 0.9rem 1.5rem;
+    color: $onFirst-color;
+    background-color: #232931;
+    line-height: 1;
+    display: inline-block;
+    cursor: default;
+    position: relative;
+    user-select: none;
+    border-style: none;
+    appearance: none;
+    width: fit-content;
+    &:focus{
+        outline: none;
+    }
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        background-color: $first-color;
+        opacity: 0.2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    @include mediaQueryHover(){
+        &:hover{
+            transform: scale(1.05);
+            &::before{
+                animation: overlayButton;
+                animation-duration: 0.4s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+    &-disabled{
+        background-color: $background-color;
+        color: $first-color;
+        border: 1px solid $first-color;
+        @include mediaQueryHover(){
+        &:hover{
+            transform: none;
+            &::before{
+                animation: none;
+            }
+        }
+    }
+    }
+}
+@keyframes overlayButton {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: -100%;
+    }
+}

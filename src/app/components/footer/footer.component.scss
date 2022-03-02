@@ -1,0 +1,20 @@
+@import 'src/theme';
+footer{
+  background-color: $second-color;
+  user-select: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color:$first-light-color;
+  &:first-child{
+    font-family: "font-primary-title-2", sans-serif;
+      font-size: 0.80rem;
+      strong{
+          font-size: 0.80rem;
+      }
+  }
+  &:last-child{
+    font-family: "font-primary-title-3", sans-serif;
+      font-size: 0.75rem;
+  }
+}

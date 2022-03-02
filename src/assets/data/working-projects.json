@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Movie Search App",
+    "description": "Find the latest trending movies to binge watch on your weekend!",
+    "links": [
+      {
+        "value": "source code",
+        "url": ""
+      }
+    ],
+    "tags": [
+      "NodeJs",
+      "Express",
+      "Angular"
+    ]
+  }
+]

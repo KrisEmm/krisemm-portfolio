@@ -1,0 +1,35 @@
+<header>
+  <div class="header">
+    <div class="header_logo" title="KrisEmm">
+      <a class="header_logo_image" routerLink="">
+        <img alt="logo_image" src="./assets/logo.svg" id="logo">
+      </a>
+      <a class="header_logo_text" routerLink="">
+        <p class="notranslate" id="text-logo-1">hi,</p>
+        <p class="notranslate" id="text-logo-2">there!</p>
+      </a>
+    </div>
+    <div class="header_options" id="options-header">
+      <div class="header_download">
+        <a class="" routerLink="">
+          Home
+        </a>
+        <a class="" routerLink="about">
+          About
+        </a>
+        <a class="" routerLink="skills">
+          Skills
+        </a>
+        <a class="" routerLink="projects">
+          Projects
+        </a>
+        <a class="" routerLink="contact">
+          Contact
+        </a>
+      </div>
+      <div class="header_line"></div>
+    </div>
+    <i class="header_menu_icon fas fa-2x" [ngClass]="isActivated ? 'fa-times' : 'fa-bars'" (click)="showMenu()"></i>
+  </div>
+  <app-menu [show]="isActivated" (changeMenuIcon)="showMenu()"></app-menu>
+</header>

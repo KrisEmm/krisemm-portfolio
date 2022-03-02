@@ -1,0 +1,48 @@
+<div class="skills">
+    <div class="skills-column-a">
+        <h1 class="skills-caption animate__animated animate__fadeInRight">Skills</h1>
+        <h2 class="skills-subtitle animate__animated animate__fadeInLeft">I constantly work on self-improvement</h2>
+        <p class="skills-text animate__animated animate__fadeInLeft animate__delay-1s">
+            I'm a hard-working, enthusiastic & fast learner. I'm a person highly motivated and that continually looks to
+            improve professionally. I'm able to work independently and collaboratively in a team with a meticulous
+            attention to detail.
+        </p>
+        <ul class="skills-list"  >
+            <li #skillTabs
+                class="skills-item skills-item-active animate__animated animate__fadeInLeft animate__delay-2s"
+                (click)="handleChangeTab($event,'toolsAndTechs')"
+            >
+                Tools and Technologies I've been working with recently
+            </li>
+            <li #skillTabs class="skills-item animate__animated animate__fadeInLeft animate__delay-3s"
+                (click)="handleChangeTab($event,'courses')"
+            >
+                Online training courses I have taken
+            </li>
+        </ul>
+    </div>
+    <div class="skills-column-b">
+        <div class="courses animate__animated animate__fadeIn" *ngIf="(tabName === 'courses')">
+            <ul class="courses-list">
+                <li class="course" *ngFor="let course of courses">
+                    <a href="{{course.url_course}}">
+                        <h1 class="course-name">
+                            {{course.name}}
+                        </h1>
+                    </a>
+                    <div class="course-info">
+                        <h2 class="course-company">{{course.company}}</h2>
+                        <a class="course-certificated" href="{{course.url_certificated}}">online certificated</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="tools-and-techs animate__animated animate__fadeInUp" *ngIf="(tabName === 'toolsAndTechs')">
+            <p class="animate__animated animate__fadeInTopRight" id="about_dev_text">Frontend</p>
+            <p class="animate__animated animate__fadeInBottomLeft" id="about_tech_text">html</p>
+            <div class="about_content_image-techs animate__animated animate__fadeInUp">
+                <app-robot-techs></app-robot-techs>
+            </div>
+        </div>
+    </div>
+</div>

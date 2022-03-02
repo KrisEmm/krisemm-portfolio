@@ -1,0 +1,67 @@
+$palette-primary: (
+    "first": #909090,
+    "lightFirst": #C4C4C4,
+    "darkFirst": #747474,
+
+    "onFirst": #f5f5f5,
+    "onLightFirst": #f2f2f2,
+    "onDarkFirst": #232e3b,
+
+    "second": #262C35,
+    "lightSecond": #383E45,
+    "darkSecond": #232931,
+
+    "onSecond": #C4C4C4,
+    "onLightSecond": #E8E8E8,
+    "onDarkSecond": #909090,
+
+    "background": #F1F1F1,
+    "surface": #E9E9E9,
+
+    "onBackground": #383E45,
+    "onSurface": #FFFFFF,
+
+    "red": #FC2B5D,
+    "pink": #EA478B,
+    "purple": #612BFC,
+    "violet": #9847EA,
+    "dark-blue": #4775EA,
+    "blue": #6EB6F9,
+    "yellow": #EABC47,
+    "orange": #FC8F2B,
+    "green": #2BFC4C,
+    "cyan": #2BFCB1,
+);
+
+$first-color:map-get($map: $palette-primary, $key:"first" );
+$first-light-color:map-get($map: $palette-primary, $key:"lightFirst" );
+$first-dark-color:map-get($map: $palette-primary, $key:"darkFirst" );
+
+$onFirst-color:map-get($map: $palette-primary, $key:"onFirst" );
+$onFirst-light-color:map-get($map: $palette-primary, $key:"onLightFirst" );
+$onFirst-dark-color:map-get($map: $palette-primary, $key:"onDarkFirst" );
+
+$second-color:map-get($map: $palette-primary, $key:"second" );
+$second-light-color:map-get($map: $palette-primary, $key:"lightSecond" );
+$second-dark-color:map-get($map: $palette-primary, $key:"darkSecond" );
+
+$onSecond-color:map-get($map: $palette-primary, $key:"onSecond" );
+$onSecond-light-color:map-get($map: $palette-primary, $key:"onLightSecond" );
+$onSecond-dark-color:map-get($map: $palette-primary, $key:"onDarkSecond" );
+
+$background-color:map-get($map: $palette-primary, $key:"background" );
+$surface-color:map-get($map: $palette-primary, $key:"surface" );
+
+$onBackground-color:map-get($map: $palette-primary, $key:"onBackground" );
+$onSurface-light-color:map-get($map: $palette-primary, $key:"OnSurface" );
+
+$red-color:map-get($map: $palette-primary, $key:"red" );
+$pink-color:map-get($map: $palette-primary, $key:"pink" );
+$purple-color:map-get($map: $palette-primary, $key:"purple" );
+$violet-color:map-get($map: $palette-primary, $key:"violet" );
+$dark-blue-color:map-get($map: $palette-primary, $key:"dark-blue" );
+$blue-color:map-get($map: $palette-primary, $key:"blue" );
+$yellow-color:map-get($map: $palette-primary, $key:"yellow" );
+$orange-color:map-get($map: $palette-primary, $key:"orange" );
+$green-color:map-get($map: $palette-primary, $key:"green" );
+$cyan-color:map-get($map: $palette-primary, $key:"cyan" );
