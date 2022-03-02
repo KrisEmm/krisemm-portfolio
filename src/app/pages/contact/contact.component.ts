@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
+import {init, send } from '@emailjs/browser';
+
+const config = {
+  user_id: 'user_AhNWKrGDTxN7FLeKNYyoH',
+  service_id: 'email_service',
+  template_id: 'contact_form'
+};
 
 @Component({
   selector: 'app-contact',
@@ -7,6 +14,7 @@ import {NgForm} from '@angular/forms';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+
   isSending = false;
   isSent = false;
   isError = false;
@@ -15,25 +23,33 @@ export class ContactComponent implements OnInit {
   constructor() {
     this.info = {
       name: '',
-      emailAddress: ''
+      email: ''
     };
   }
 
   ngOnInit(): void {
+    init(config.user_id);
     window.scroll({
       top: 0,
     });
   }
 
-  handleSubmit(form: NgForm): void {
+  async handleSubmit(form: NgForm): Promise<void> {
     this.isSending = true;
-    setTimeout(() => {
-      console.log(form.value);
-      this.info.name = form.value.name;
-      this.info.emailAddress = form.value.email;
+    try{
+      await send(config.service_id, config.template_id, form.value, config.user_id);
+      const {name, email} = form.value;
+      this.info = {
+        name,
+        email
+      };
       this.isSent = true;
       this.isError = false;
-    }, 3000);
+    }catch (e) {
+      console.log(e);
+      this.isSent = true;
+      this.isError = true;
+    }
   }
 
   handleReset(form: NgForm): void {

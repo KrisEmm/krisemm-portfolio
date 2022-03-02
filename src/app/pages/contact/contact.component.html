@@ -6,7 +6,8 @@
         comentario, o
         simplemente te gustaria saludar, no dudes en dejarme tu mensaje.
     </p>
-    <form class="form_contact animate__animated animate__fadeInUp animate__delay-1s" autocomplete="off" (submit)="handleSubmit(form)"
+    <form class="form_contact animate__animated animate__fadeInUp animate__delay-1s" autocomplete="off"
+          (submit)="handleSubmit(form)"
           #form="ngForm"
           [ngClass]="{'form_contact-hide': isSent}">
         <div class="form_group_row">
@@ -58,7 +59,7 @@
         <h1>Gracias por tu mensaje!</h1>
         <h2>Ha sido enviado con éxito</h2>
         <p>Estoy tan feliz de recibir tu mensaje, {{info.name}}. Intentaré responderte personalmente lo antes posible
-            a tu email {{info.emailAddress}}.
+            a tu email {{info.email}}.
         </p>
         <button class="button" type="button" (click)="handleReset(form)">
             Nuevo Mensaje
