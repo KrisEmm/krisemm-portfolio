@@ -18,17 +18,17 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "index": "dist/index.html",
+            "main": "dist/main.ts",
+            "polyfills": "dist/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "dist/favicon.ico",
+              "dist/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "dist/styles.scss"
             ],
             "scripts": []
           },
