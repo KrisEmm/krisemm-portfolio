@@ -233,6 +233,7 @@
 @include mediaQuery("tablet-portrait"){
   .projects {
     flex-direction: column;
+    height: 100vh;
   }
   .project-featured {
     padding: 1rem 1rem 0;
