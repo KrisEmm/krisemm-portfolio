@@ -26,6 +26,10 @@ jobs:
     - name: Install Dependencies
       run: npm install
     - name: Build
-      run: npm run build && npm run copy
+      run: npm run build
+      env:
+        emailjs_user_id: ${{ secrets.EMAILJS_USER_ID }}
+    - name: Copy Index into 404.html
+      run: npm run copy
     - name: Deploy
       run: npm run deploy

@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
 import {init, send } from '@emailjs/browser';
+import { environment } from '../../../environments/environment';
 
 const config = {
-  user_id: 'user_AhNWKrGDTxN7FLeKNYyoH',
-  service_id: 'email_service',
-  template_id: 'contact_form'
+  user_id: environment.emailjs_user_id,
+  service_id: environment.emailjs_service_id,
+  template_id: environment.emailjs_template_id
 };
 
 @Component({
