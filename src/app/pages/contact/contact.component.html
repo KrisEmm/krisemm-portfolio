@@ -1,80 +1,75 @@
 <div class="contact animate__animated animate__fadeIn">
-    <h2 class="contact_overline animate__animated animate__fadeInRight">Contact</h2>
-    <h1 class="contact_caption animate__animated animate__fadeInLeft">Get In Touch With Me</h1>
-    <p class="contact_message animate__animated animate__fadeInUp animate__delay-1s" [ngClass]="{'form_contact-hide': isSent}">My
-        inbox is
-        always open, If
-        you
-        like what I do
-        and have any
-        suggestions, comments,
-        feedback, or just want to say hi, feel free to drop your message and share it.
+    <h2 class="contact_overline animate__animated animate__fadeInRight">Contacto</h2>
+    <h1 class="contact_caption animate__animated animate__fadeInLeft">Ponte En Contacto Conmigo</h1>
+    <p class="contact_message animate__animated animate__fadeInUp animate__delay-1s" [ngClass]="{'form_contact-hide': isSent}">
+        Mi bandeja de entrada siempre está disponible. Si te gusta lo que hago y tienes alguna sugerencia,
+        comentario, o
+        simplemente te gustaria saludar, no dudes en dejarme tu mensaje.
     </p>
     <form class="form_contact animate__animated animate__fadeInUp animate__delay-1s" autocomplete="off" (submit)="handleSubmit(form)"
           #form="ngForm"
           [ngClass]="{'form_contact-hide': isSent}">
         <div class="form_group_row">
             <div class="form_group_column-a">
-                <input class="form_control" type="text" name="name" placeholder="Enter your name" maxlength="25"
+                <input class="form_control" type="text" name="name" placeholder="Ingresa tu nombre" maxlength="25"
                        required
                        [ngModel] #name="ngModel" [disabled]="isSending">
                 <small *ngIf="name.invalid" class="form-error">
           <span *ngIf="name.errors?.required">
-            * your name's required
+            * tu nombre es requerido
           </span>
                 </small>
             </div>
             <div class="form_group_column-b">
-                <input class="form_control" type="email" name="email" placeholder="Enter a valid email address"
+                <input class="form_control" type="email" name="email" placeholder="Ingresa tu email"
                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required [ngModel] #email="ngModel" [disabled]="isSending">
                 <small *ngIf="email.invalid" class="form-error">
           <span *ngIf="email.errors?.required">
-            * your email's required
+            * tu email es requerido
           </span>
                     <span *ngIf="email.errors?.pattern">
-            * your email address's invalid
+            * tu email es invalido
           </span>
                 </small>
             </div>
         </div>
         <div class="form_group">
-      <textarea class="form_control" name="message" cols="30" rows="3" placeholder="Enter your message" maxlength="250"
+      <textarea class="form_control" name="message" cols="30" rows="3" placeholder="Escribe tu mensaje" maxlength="250"
                 required [ngModel] #message="ngModel" [disabled]="isSending"></textarea>
             <small *ngIf="message.invalid" class="form-error">
         <span *ngIf="message.errors?.required">
-          * your message's required
+          * tu mensaje es requerido
         </span>
             </small>
         </div>
         <div class="form_group" [ngClass]="{'form_group-hide': isSending}">
             <button class="button" [ngClass]="{'button-disabled': !form.valid}" type="submit" [disabled]="!form.valid">
-                Drop your message
+                Deja tu mensaje
             </button>
         </div>
         <div class="form_group form_group-hide" [ngClass]="{'form_group-hide': !isSending}">
             <div class="form_alert">
                 <i class="fas fa-sync-alt fa-spin fa-2x"></i>
-                <p class="form_alert_text">Please wait a moment.</p>
+                <p class="form_alert_text">Por favor espera un momento.</p>
             </div>
         </div>
     </form>
     <div class="notify-contact animate__animated animate__fadeIn" [ngClass]="{'notify-show': isSent && !isError}">
-        <h1>Thank you for message!</h1>
-        <h2>Your message has been sent successfully</h2>
-        <p>I'm so happy to receive your message, {{info.name}}. I'll try to answer you personally as soon as
-            possible to this email
-            {{info.emailAddress}}.
+        <h1>Gracias por tu mensaje!</h1>
+        <h2>Ha sido enviado con éxito</h2>
+        <p>Estoy tan feliz de recibir tu mensaje, {{info.name}}. Intentaré responderte personalmente lo antes posible
+            a tu email {{info.emailAddress}}.
         </p>
         <button class="button" type="button" (click)="handleReset(form)">
-            New Message
+            Nuevo Mensaje
         </button>
     </div>
     <div class="notify-contact animate__animated animate__fadeIn" [ngClass]="{'notify-show': isSent && isError}">
         <h1>Oops!</h1>
-        <h2>Your message has not been sent successfully</h2>
-        <p>I'm sorry probably the service is not available at the moment.</p>
+        <h2>Tu mensaje no se logro enviar con exito</h2>
+        <p>Lo siento, probablemente el servicio no está disponible en este momento.</p>
         <button class="button" type="button" (click)="handleReset(form)">
-            Try Later
+            Intentar Mas Tarde
         </button>
     </div>
 </div>

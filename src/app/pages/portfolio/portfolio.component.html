@@ -1,21 +1,21 @@
 <div #portfolio class="portfolio">
     <h1 class="portfolio_title animate__animated animate__fadeInDown">
-        Portfolio
+        Portafolio
     </h1>
     <h2 class="portfolio_subtitle animate__animated animate__fadeInUp">
-        If you can imagine it, you can program it.
+        Si puedes imaginarlo, puedes programarlo.
     </h2>
     <div class="animate__animated animate__fadeInUp animate__delay-1s">
         <div class="portfolio_search ">
-            <input type="search" name="" id="" placeholder="Search..." (input)="handleInputChange($event)">
+            <input type="search" name="" id="" placeholder="Buscar..." (input)="handleInputChange($event)">
             <p class="portfolio_filter_by_tags"
-               (click)="handleClickTagFilter()">{{showTagFilter ? 'hide tags' : 'filter by tags'}}</p>
+               (click)="handleClickTagFilter()">{{showTagFilter ? 'ocultar tags' : 'filtrar por tags'}}</p>
         </div>
         <ul class="portfolio_list_basic_filters"
             [ngStyle]="{'display': showTagFilter ? 'flex' : 'none'}"
         >
             <li #defaultTag (click)="handleClickTag($event, 'All')"
-                class="portfolio_basic_filter_item portfolio_basic_filter_item-active">All
+                class="portfolio_basic_filter_item portfolio_basic_filter_item-active">Todos
             </li>
             <li (click)="handleClickTag($event, 'Web')"
                 class="portfolio_basic_filter_item">Web
