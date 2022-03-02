@@ -29,6 +29,7 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log(config);
     init(config.user_id);
     window.scroll({
       top: 0,
@@ -47,7 +48,6 @@ export class ContactComponent implements OnInit {
       this.isSent = true;
       this.isError = false;
     }catch (e) {
-      console.log(e);
       this.isSent = true;
       this.isError = true;
     }
