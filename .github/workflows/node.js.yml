@@ -12,9 +12,7 @@ jobs:
     - name: Github Checkout
       uses: actions/checkout@v2
     - name: Set up Git Token
-      uses: fregante/setup-git-token@v1
-      with:
-        token: ${{ secrets.GH_TOKEN }}
+      uses: actions/checkout@v2
     - name: Set Username
       run: git config user.name "KrisEmm"
     - name: Set Email
