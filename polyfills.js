@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/runner/work/portfolio/portfolio/src/polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! /home/runner/work/krisemm-portfolio/krisemm-portfolio/src/polyfills.ts */"hN/g");
 
 
 /***/ }),
