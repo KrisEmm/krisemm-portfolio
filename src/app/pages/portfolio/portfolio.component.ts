@@ -21,7 +21,7 @@ export class PortfolioComponent implements  OnInit, OnDestroy, AfterViewChecked 
     public projects: Array<Record<string, any>>;
 
     constructor(searcher: SearcherService, render: Renderer2) {
-        this.showTagFilter = false;
+        this.showTagFilter = true;
         this.tagIsActivate = false;
         this.tagsSelected = [];
         this.render = render;
