@@ -2543,7 +2543,7 @@ var _assets_data_working_projects_json__WEBPACK_IMPORTED_MODULE_1___namespace = 
 
 const _c0 = ["latestProject"];
 const _c1 = ["listTabs"];
-function ProjectsComponent_li_17_a_6_Template(rf, ctx) { if (rf & 1) {
+function ProjectsComponent_li_16_a_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "a", 28);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
@@ -2553,7 +2553,7 @@ function ProjectsComponent_li_17_a_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](link_r6.value);
 } }
-function ProjectsComponent_li_17_li_8_Template(rf, ctx) { if (rf & 1) {
+function ProjectsComponent_li_16_li_8_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "li");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
@@ -2562,7 +2562,7 @@ function ProjectsComponent_li_17_li_8_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](tag_r7);
 } }
-function ProjectsComponent_li_17_Template(rf, ctx) { if (rf & 1) {
+function ProjectsComponent_li_16_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "li", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "h3", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2);
@@ -2571,10 +2571,10 @@ function ProjectsComponent_li_17_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](5, "div", 24);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, ProjectsComponent_li_17_a_6_Template, 2, 2, "a", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, ProjectsComponent_li_16_a_6_Template, 2, 2, "a", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](7, "ul", 26);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](8, ProjectsComponent_li_17_li_8_Template, 2, 1, "li", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](8, ProjectsComponent_li_16_li_8_Template, 2, 1, "li", 27);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -2631,7 +2631,7 @@ ProjectsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefine
         let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.latestProject = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.tabs = _t);
-    } }, decls: 66, vars: 7, consts: [[1, "projects"], [1, "projects-column-a"], [1, "projects-tabs"], [1, "projects_overline", "animate__animated", "animate__fadeInRight"], [1, "projects_caption", "animate__animated", "animate__fadeInLeft"], [1, "projects-tab-is-active", "animate__animated", "animate__fadeInUp", "animate__delay-2s", 3, "click"], ["listTabs", ""], [1, "animate__animated", "animate__fadeInUp", "animate__delay-3s", 3, "click"], [1, "projects-column-b"], [1, "working", "animate__animated", "animate__fadeIn", "animate__delay-1s", 3, "ngStyle"], ["latestProject", ""], [1, "working-projects-list"], ["class", "working-project-item", 4, "ngFor", "ngForOf"], [1, "project-featured", "animate__animated", "animate__fadeIn", "animate__delay-1s", 3, "ngStyle"], [1, "project-featured-name"], [1, "project-featured-subtitles"], [1, "project-featured-paragraphs"], [1, "project-featured-links"], ["href", ""], [1, "project-featured-lists"], [1, "project-featured-lists", "project-featured-list-features"], [1, "working-project-item"], [1, "working-project-name"], [1, "working-project-paragraph"], [1, "working-project-links"], ["target", "_blank", 3, "href", 4, "ngFor", "ngForOf"], [1, "working-project-tags"], [4, "ngFor", "ngForOf"], ["target", "_blank", 3, "href"]], template: function ProjectsComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 66, vars: 7, consts: [[1, "projects"], [1, "projects-column-a"], [1, "projects-tabs"], [1, "projects_overline", "animate__animated", "animate__fadeInRight"], [1, "projects_caption", "animate__animated", "animate__fadeInLeft"], [1, "projects-tab-is-active", "animate__animated", "animate__fadeInUp", "animate__delay-2s", 3, "click"], ["listTabs", ""], [1, "animate__animated", "animate__fadeInUp", "animate__delay-3s", 3, "click"], [1, "projects-column-b"], [1, "working", "animate__animated", "animate__fadeIn", "animate__delay-1s", 3, "ngStyle"], [1, "working-projects-list"], ["class", "working-project-item", 4, "ngFor", "ngForOf"], [1, "project-featured", "animate__animated", "animate__fadeIn", "animate__delay-1s", 3, "ngStyle"], ["latestProject", ""], [1, "project-featured-name"], [1, "project-featured-subtitles"], [1, "project-featured-paragraphs"], [1, "project-featured-links"], ["href", ""], [1, "project-featured-lists"], [1, "project-featured-lists", "project-featured-list-features"], [1, "working-project-item"], [1, "working-project-name"], [1, "working-project-paragraph"], [1, "working-project-links"], ["target", "_blank", 3, "href", 4, "ngFor", "ngForOf"], [1, "working-project-tags"], [4, "ngFor", "ngForOf"], ["target", "_blank", 3, "href"]], template: function ProjectsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "div", 2);
@@ -2654,12 +2654,12 @@ ProjectsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](13, "div", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](14, "div", 9, 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](16, "ul", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](17, ProjectsComponent_li_17_Template, 9, 4, "li", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](14, "div", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](15, "ul", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](16, ProjectsComponent_li_16_Template, 9, 4, "li", 11);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](18, "div", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](17, "div", 12, 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](19, "h2", 14);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](20, "Youtufy");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
@@ -2738,7 +2738,7 @@ ProjectsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefine
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](14);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](3, _c2, ctx.tabName === "working" ? "block" : "none"));
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.projects);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](5, _c2, ctx.tabName === "latest-project" ? "block" : "none"));
