@@ -25,14 +25,14 @@
         <div class="courses animate__animated animate__fadeIn" *ngIf="(tabName === 'courses')">
             <ul class="courses-list">
                 <li class="course" *ngFor="let course of courses">
-                    <a href="{{course.url_course}}">
+                    <a href="{{course.url_course}}" target="_blank">
                         <h1 class="course-name">
                             {{course.name}}
                         </h1>
                     </a>
                     <div class="course-info">
                         <h2 class="course-company">{{course.company}}</h2>
-                        <a class="course-certificated" href="{{course.url_certificated}}">online certificated</a>
+                        <a class="course-certificated" href="{{course.url_certificated}}" target="_blank">online certificated</a>
                     </div>
                 </li>
             </ul>
