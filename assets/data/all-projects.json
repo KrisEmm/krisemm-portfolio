@@ -36,6 +36,52 @@
     ]
   },
   {
+    "name": "FindJobs",
+    "description": "Este proyecto se puede publicar ofertas de trabajo y aplicar a ellas.",
+    "links": [
+      {
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/findjobs"
+      }
+    ],
+    "tags": [
+      "Java",
+      "Spring Boot",
+      "MVC"
+    ]
+  },
+  {
+    "name": "Cinetflix",
+    "description": "Este proyecto se puede administrar la cartelera de un cine, agregar peliculas, horarios y detalles.",
+    "links": [
+      {
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/cinetflix"
+      }
+    ],
+    "tags": [
+      "Java",
+      "Spring",
+      "Spring MVC",
+      "MVC"
+    ]
+  },
+  {
+    "name": "API Music",
+    "description": "Este proyecto es una restapi y crud para administrar música.",
+    "links": [
+      {
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/apiMusic"
+      }
+    ],
+    "tags": [
+      "Java",
+      "Spring Boot",
+      "MVC"
+    ]
+  },
+  {
     "name": "Meeti",
     "description": "En este proyecto puedes publicar reuniones o grupos para charlar sobre algun un tema en específico y también puedes unirte a un grupo cercano a tu localidad y comentar sobre el tema dentro del grupo.",
     "links": [
