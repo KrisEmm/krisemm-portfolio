@@ -443,7 +443,7 @@ SkillsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineCo
 /*! exports provided: 0, 1, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"name\":\"Youtufy\",\"description\":\"En esta aplicación puedes descargar el audio mp3 de tus videos de youtube favoritos y reproducirlos, crear carpetas por artista o género, también puedes crear tus propias listas de reproducción.\",\"links\":[{\"value\":\"ver codigo\",\"url\":\"https://github.com/KrisEmm/youtufy\"}],\"tags\":[\"NodeJs\",\"Express\",\"Typescript\",\"Hexagon Architecture\",\"DDD\",\"CQRS\"]},{\"name\":\"Nodejs DDD Monorepo Template\",\"description\":\"Esta es una plantilla para empezar a implementar arquitectura hexagonal, ddd y cqrs en tus proyectos.\",\"links\":[{\"value\":\"ver codigo\",\"url\":\"https://github.com/KrisEmm/uptask\"}],\"tags\":[\"NodeJs\",\"Express\",\"Typescript\",\"Hexagon Architecture\",\"DDD\",\"CQRS\"]}]");
+module.exports = JSON.parse("[{\"name\":\"Youtufy\",\"description\":\"En esta aplicación puedes descargar el audio mp3 de tus videos de youtube favoritos y reproducirlos, crear carpetas por artista o género, también puedes crear tus propias listas de reproducción.\",\"links\":[{\"value\":\"ver codigo\",\"url\":\"https://github.com/KrisEmm/youtufy\"}],\"tags\":[\"NodeJs\",\"Express\",\"Typescript\",\"Hexagon Architecture\",\"DDD\",\"CQRS\"]},{\"name\":\"Nodejs DDD Monorepo Template\",\"description\":\"Esta es una plantilla para empezar a implementar arquitectura hexagonal, ddd y cqrs en tus proyectos.\",\"links\":[{\"value\":\"ver codigo\",\"url\":\"https://github.com/KrisEmm/nodejs-ddd-monorepo-template\"}],\"tags\":[\"NodeJs\",\"Express\",\"Typescript\",\"Hexagon Architecture\",\"DDD\",\"CQRS\"]}]");
 
 /***/ }),
 
