@@ -173,13 +173,14 @@
   list-style: none;
   display: flex;
   padding-top: 0.1rem;
-
+  flex-wrap: wrap;
   li {
     font-family: "font-primary-control-1", sans-serif;
     font-size: 0.9rem;
     color: $second-color;
     padding: 0.1rem 1rem;
     margin-right: 0.5rem;
+    margin-bottom: 0.2rem;
     border: 1px solid $first-light-color;
     border-radius: 2%;
 

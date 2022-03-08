@@ -19,7 +19,7 @@ export class ProjectsComponent implements OnInit{
     public projects: Array<Record<string, any>>;
 
     constructor(render: Renderer2,  router: Router) {
-        this.tabName = 'latest-project';
+        this.tabName = 'working';
         this.render = render;
         this.router = router;
         this.isFirstTime = true;

@@ -104,11 +104,12 @@
 }
 .portfolio_item_links{
   margin-bottom: 0.5rem;
-
+  display: flex;
   a {
     font-family: "font-primary-control-1", sans-serif;
     font-size: 0.9rem;
     color: $first-color;
+    margin-right: 0.5rem;
   }
   a:hover{
     color: $second-color;

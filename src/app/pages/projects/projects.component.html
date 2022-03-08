@@ -4,12 +4,12 @@
             <h2 class="projects_overline animate__animated animate__fadeInRight">Proyectos</h2>
             <h1 class="projects_caption animate__animated animate__fadeInLeft">Algunas Cosas Que He Construido</h1>
             <ul>
-                <li #listTabs class="projects-tab-is-active animate__animated animate__fadeInUp animate__delay-1s"
-                    (click)="handleChangeTab($event,'latest-project')"
-                >Último Proyecto
-                </li>
+<!--                <li #listTabs class="animate__animated animate__fadeInUp animate__delay-1s"-->
+<!--                    (click)="handleChangeTab($event,'latest-project')"-->
+<!--                >Último Proyecto-->
+<!--                </li>-->
                 <li #listTabs (click)="handleChangeTab($event,'working')"
-                    class="animate__animated animate__fadeInUp animate__delay-2s"
+                    class="projects-tab-is-active animate__animated animate__fadeInUp animate__delay-2s"
                 >Actualmente Trabando En
                 </li>
                 <li (click)="handleClick()" class="animate__animated animate__fadeInUp animate__delay-3s">
@@ -31,7 +31,7 @@
                       {{project.description}}
                    </p>
                    <div class="working-project-links">
-                       <a href="{{link.url}}" *ngFor="let link of project.links">{{link.value}}</a>
+                       <a href="{{link.url}}" *ngFor="let link of project.links" target="_blank">{{link.value}}</a>
                    </div>
                    <ul class="working-project-tags">
                        <li *ngFor="let tag of project.tags">{{tag}}</li>

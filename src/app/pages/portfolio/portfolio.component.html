@@ -17,12 +17,6 @@
             <li #defaultTag (click)="handleClickTag($event, 'All')"
                 class="portfolio_basic_filter_item portfolio_basic_filter_item-active">Todos
             </li>
-            <li (click)="handleClickTag($event, 'Web')"
-                class="portfolio_basic_filter_item">Web
-            </li>
-            <li (click)="handleClickTag($event, 'Api')"
-                class="portfolio_basic_filter_item">Api
-            </li>
             <li (click)="handleClickTag($event, 'Javascript')"
                 class="portfolio_basic_filter_item">Javascript
             </li>
@@ -53,8 +47,17 @@
             <li (click)="handleClickTag($event, 'CSS')"
                 class="portfolio_basic_filter_item">CSS
             </li>
-            <li (click)="handleClickTag($event, 'Sass')"
-                class="portfolio_basic_filter_item">Sass
+            <li (click)="handleClickTag($event, 'MVC')"
+                class="portfolio_basic_filter_item">Web
+            </li>
+            <li (click)="handleClickTag($event, 'Hexagon Architecture')"
+                class="portfolio_basic_filter_item">Web
+            </li>
+            <li (click)="handleClickTag($event, 'DDD')"
+                class="portfolio_basic_filter_item">Web
+            </li>
+            <li (click)="handleClickTag($event, 'CQRS')"
+                class="portfolio_basic_filter_item">Web
             </li>
         </ul>
     </div>
@@ -67,7 +70,7 @@
                 {{project.description}}
             </p>
             <div class="portfolio_item_links" >
-                <a href="{{link.url}}" *ngFor="let link of project.links">{{link.value}}</a>
+                <a href="{{link.url}}" *ngFor="let link of project.links" target="_blank">{{link.value}}</a>
             </div>
             <ul class="portfolio_item_tags" >
                 <li *ngFor="let tag of project.tags">{{tag}}</li>
