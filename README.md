@@ -7,7 +7,7 @@
 
 ## Description
 
-Este es mi sitio web y aquí encontrarás proyectos e información sobre mí.
+This is my website and here you will find projects and information about me.
 
 ## Using
 
@@ -16,8 +16,8 @@ Este es mi sitio web y aquí encontrarás proyectos e información sobre mí.
 
 ## How to run this project
 
-### `git clone https://github.com/KrisEmm/krisemm-portfolio.git`
+##### `git clone https://github.com/KrisEmm/krisemm-portfolio.git`
 
-### `npm run start`
+##### `npm run start`
 
-### `visit into browser http:\\localhost:port/`
+##### `visit into browser http:\\localhost:port/`
