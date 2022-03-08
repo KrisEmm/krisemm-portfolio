@@ -1,27 +1,23 @@
-# PersonalPortfolioLastVersion
+## Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+![project-name](https://krisemm.github.io/krisemm-portfolio/assets/images/projects/krisemm-portfolio.png 
+"project name")
 
-## Development server
+##### This project is hosted on [github pages](https://krisemm.github.io/krisemm-portfolio/). 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+Este es mi sitio web y aquí encontrarás proyectos e información sobre mí.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Using
 
-## Build
+- Angular
+- Github Pages
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## How to run this project
 
-## Running unit tests
+### `git clone https://github.com/KrisEmm/krisemm-portfolio.git`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### `npm run start`
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### `visit into browser http:\\localhost:port/`
