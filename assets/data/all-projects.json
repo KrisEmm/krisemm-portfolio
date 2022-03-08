@@ -1,66 +1,242 @@
 [
   {
-    "name": "Movie Search App",
-    "description": "Find the latest trending movies to binge watch on your weekend! This app use typescript and spring",
+    "name": "Portfolio",
+    "description": "Este es mi sitio web y aquí encontrarás proyectos e información sobre mí..",
     "links": [
       {
-        "value": "source code",
-        "url": ""
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/krisemm-portfolio"
+      },
+      {
+        "value": "visitar app",
+        "url": "https://krisemm.github.io/krisemm-portfolio/"
+      }
+    ],
+    "tags": [
+      "Angular",
+      "Typescript"
+    ]
+  },
+  {
+    "name": "Youtufy",
+    "description": "En esta aplicación puedes descargar el audio mp3 de tus videos de youtube favoritos y reproducirlos, crear carpetas por artista o género, también puedes crear tus propias listas de reproducción.",
+    "links": [
+      {
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/youtufy"
       }
     ],
     "tags": [
       "NodeJs",
       "Express",
-      "Angular",
-      "TMDb API"
-    ]
-  },
-  {
-    "name": "Ecommerce App",
-    "description": "This is multi-tenant t-shirt shops",
-    "links": [
-      {
-        "value": "source code",
-        "url": ""
-      }
-    ],
-    "tags": [
-      "NodeJs",
       "Typescript",
+      "Hexagon Architecture",
+      "DDD",
+      "CQRS"
+    ]
+  },
+  {
+    "name": "Meeti",
+    "description": "En este proyecto puedes publicar reuniones o grupos para charlar sobre algun un tema en específico y también puedes unirte a un grupo cercano a tu localidad y comentar sobre el tema dentro del grupo.",
+    "links": [
+      {
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/meeti"
+      },
+      {
+        "value": "visitar app",
+        "url": "http://www.meeti.krisemm.xyz/"
+      }
+    ],
+    "tags": [
+      "NodeJs",
       "Express",
-      "React",
-      "Redux"
+      "Javascript",
+      "MVC"
     ]
   },
   {
-    "name": "DevJob App",
-    "description": "Find the latest trending jobs to binge watch on your weekend!",
+    "name": "Customer Relationship Management",
+    "description": "En este proyecto puedes gestionar tus clientes, productos y pedidos.",
     "links": [
       {
-        "value": "source code",
-        "url": ""
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/customer-relationship-management"
+      },
+      {
+        "value": "visitar app",
+        "url": "http://www.crm.krisemm.xyz/"
       }
     ],
     "tags": [
-      "Java",
-      "Spring",
+      "NodeJs",
+      "Express",
+      "Javascript",
+      "MVC"
+    ]
+  },
+  {
+    "name": "DevJobs",
+    "description": "Este proyecto se puede publicar ofertas de trabajo y aplicar a ellas.",
+    "links": [
+      {
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/devjobs"
+      },
+      {
+        "value": "visitar app",
+        "url": "http://www.devjobs.krisemm.xyz/"
+      }
+    ],
+    "tags": [
+      "NodeJs",
+      "Express",
+      "Javascript",
+      "MVC"
+    ]
+  },
+  {
+    "name": "Uptask",
+    "description": "Este proyecto es un administrador de tareas desarrollado en nodejs y express.",
+    "links": [
+      {
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/uptask"
+      },
+      {
+        "value": "visitar app",
+        "url": "http://www.uptask.krisemm.xyz/"
+      }
+    ],
+    "tags": [
+      "NodeJs",
+      "Express",
+      "Javascript",
+      "MVC"
+    ]
+  },
+  {
+    "name": "Nodejs DDD Standard Template",
+    "description": "Esta es una plantilla para empezar a implementar arquitectura hexagonal, ddd y cqrs en tus proyectos.",
+    "links": [
+      {
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/nodejs-ddd-standard-template"
+      }
+    ],
+    "tags": [
+      "NodeJs",
+      "Express",
+      "Typescript",
+      "Hexagon Architecture",
+      "DDD",
+      "CQRS"
+    ]
+  },
+  {
+    "name": "Nodejs DDD Monorepo Template",
+    "description": "Esta es una plantilla para empezar a implementar arquitectura hexagonal, ddd y cqrs en tus proyectos.",
+    "links": [
+      {
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/uptask"
+      }
+    ],
+    "tags": [
+      "NodeJs",
+      "Express",
+      "Typescript",
+      "Hexagon Architecture",
+      "DDD",
+      "CQRS"
+    ]
+  },
+  {
+    "name": "Angular Template",
+    "description": "Esta es una plantilla que usa Angular para comenzar a implementar la arquitectura hexagonal en tus proyectos frontend.",
+    "links": [
+      {
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/angular-template"
+      }
+    ],
+    "tags": [
       "Angular",
-      "Redux"
+      "Typescript",
+      "Hexagon Architecture"
     ]
   },
   {
-    "name": "Typescript Domain driven Design template",
-    "description": "Find the latest trending jobs to binge watch on your weekend!",
+    "name": "Lyrics Searcher",
+    "description": "Este proyecto es un búscador de letras de canciones que hace uso de las api's theaudiodb y lyrics.ovh",
     "links": [
       {
-        "value": "source code",
-        "url": ""
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/lyrics-searcher"
+      },
+      {
+        "value": "visitar app",
+        "url": "https://krisemm.github.io/lyrics-searcher/"
       }
     ],
     "tags": [
-      "Java",
-      "Spring",
-      "Angular"
+      "React",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Budget Manager",
+    "description": "Este es un proyecto que te ayuda a conocer y administrar tus gastos. Pones tu presupuesto mensual o semanal y luego cada uno de tus gastos y al final te muestra tu saldo.",
+    "links": [
+      {
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/budget-manager"
+      },
+      {
+        "value": "visitar app",
+        "url": "https://krisemm.github.io/budget-manager/"
+      }
+    ],
+    "tags": [
+      "React",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Vet Appointment Manager",
+    "description": "Este proyecto es una aplicación de una sola página hecha con react y que contiene un formulario para programar una cita con el veterinario de tu mascota. Una vez que hayas llenado el formulario, podrás ver la lista de citas que se han programado..",
+    "links": [
+      {
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/vet-apppointment-manager"
+      },
+      {
+        "value": "visitar app",
+        "url": "https://krisemm.github.io/vet-apppointment-manager/"
+      }
+    ],
+    "tags": [
+      "React",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Insurance Quote",
+    "description": "Este proyecto es una cotizador de seguros en el que llenas un formulario y te calcula el costo del seguro que seleccionaste.",
+    "links": [
+      {
+        "value": "ver codigo",
+        "url": "https://github.com/KrisEmm/insurance-quote"
+      },
+      {
+        "value": "visitar app",
+        "url": "https://krisemm.github.io/insurance-quote/"
+      }
+    ],
+    "tags": [
+      "React",
+      "Javascript"
     ]
   }
+
 ]
