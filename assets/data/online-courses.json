@@ -1,20 +1,111 @@
 [
   {
+    "name": "Principios SOLID aplicados",
+    "company": "CodelyTv",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-principios-solid-aplicados.pdf",
+    "url_course": "https://pro.codely.tv/library/principios-solid-aplicados-36875/77070/about/"
+  },
+  {
     "name": "Arquitectura Hexagonal",
     "company": "CodelyTv",
-    "url_certificated": "",
-    "url_course": ""
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-arquitectura-hexagonal.pdf",
+    "url_course": "https://pro.codely.tv/library/?category=Arquitectura+de+Software"
+  },
+  {
+    "name": "Comunicación entre microservicios: Event-Driven Architecture",
+    "company": "CodelyTv",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-comunicacion-entre-microservicios-event-driven-architecture.pdf",
+    "url_course": "https://pro.codely.tv/library/comunicacion-entre-microservicios-event-driven-architecture-35834/74823/about/"
+  },
+  {
+    "name": "CQRS: Command Query Responsibility Segregation",
+    "company": "CodelyTv",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-cqrs-command-query-responsibility-segregation.pdf",
+    "url_course": "https://pro.codely.tv/library/cqrs-command-query-responsibility-segregation-29074/62554/about/"
+  },
+  {
+    "name": "DDD en Java",
+    "company": "CodelyTv",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-ddd-en-java.pdf",
+    "url_course": "https://pro.codely.tv/library/ddd-en-java-48201/100825/about/"
+  },
+  {
+    "name": "Visualiza métricas de Prometheus con Grafana",
+    "company": "CodelyTv",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-curso-grafana-con-prometheus.pdf",
+    "url_course": "https://pro.codely.tv/library/visualiza-metricas-de-prometheus-con-grafana-60259/174055/about/"
+  },
+  {
+    "name": "Monitoring con Prometheus",
+    "company": "CodelyTv",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-prometheus.pdf",
+    "url_course": "https://pro.codely.tv/library/monitoring-con-prometheus-52668/115108/about/"
+  },
+  {
+    "name": "ELK+Beats: Centraliza logs con Elastic Stack",
+    "company": "CodelyTv",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-elkbeats-centraliza-la-gestion-de-logs-con-the-elastic-stack.pdf",
+    "url_course": "https://pro.codely.tv/library/elkbeats-centraliza-logs-con-elastic-stack-36986/88971/about/"
+  },
+  {
+    "name": "Testing: Introducción y buenas prácticas",
+    "company": "CodelyTv",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-testing-introduccion-y-buenas-practicas.pdf",
+    "url_course": "https://pro.codely.tv/library/testing-introduccion-y-buenas-practicas-44653/90916/about/"
+  },
+  {
+    "name": "Angular: De cero a experto (Legacy)",
+    "company": "Udemy",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-angular-experto.pdf",
+    "url_course": "https://www.udemy.com/course/angular-2-fernando-herrera/"
+  },
+  {
+    "name": "Angular: Convierte cualquier template HTML en una WebAPP",
+    "company": "Udemy",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-angular-basico.pdf",
+    "url_course": "https://www.udemy.com/course/html-hacia-angular/"
+  },
+  {
+    "name": "React - La Guía Completa: Hooks Context Redux MERN",
+    "company": "Udemy",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-react.pdf",
+    "url_course": "https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/"
+  },
+  {
+    "name": "React Avanzado: Fullstack Next.js, Apollo, MongoDB y GraphQL",
+    "company": "Udemy",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-react-avanzado-fullstack-nextjs-graphql.pdf",
+    "url_course": "https://www.udemy.com/course/fullstack-react-graphql-y-apollo-de-principiante-a-experto/"
   },
   {
     "name": "Node.js - Bootcamp Desarrollo Web inc. MVC y REST APIs",
     "company": "Udemy",
-    "url_certificated": "",
-    "url_course": ""
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-nodejs.pdf",
+    "url_course": "https://www.udemy.com/course/nodejs-bootcamp-desarrollo-web-mvc-y-rest-apis/"
   },
   {
-    "name": "CQRS Command Query Responsibility Segregation",
-    "company": "CodelyTv",
-    "url_certificated": "",
-    "url_course": ""
+    "name": "TypeScript: Tu completa guía y manual de mano",
+    "company": "Udemy",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-typescript.pdf",
+    "url_course": "https://www.udemy.com/course/typescript-guia-completa/"
+  },
+  {
+    "name": "Spring Boot 2 & Spring MVC-Desarrollo Web Profesional",
+    "company": "Udemy",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-springboot2-spring-mvc.pdf",
+    "url_course": "https://www.udemy.com/course/spring-framework-desarrollo-web-spring-mvc/"
+  },
+  {
+    "name": "Microservicios con Spring Boot y Spring Cloud Netflix Eureka",
+    "company": "Udemy",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-microservicios-spring-boot.pdf",
+    "url_course": "https://www.udemy.com/course/microservicios-con-spring-boot-y-spring-cloud/"
+  },
+  {
+    "name": "Guía Completa JUnit y Mockito incluye Spring Boot Test",
+    "company": "Udemy",
+    "url_certificated": "https://krisemm.github.io/krisemm-portfolio/assets/files/certificates/certificado-testing-junit-mockito.pdf",
+    "url_course": "https://www.udemy.com/course/curso-completo-junit-mockito-spring-boot-test/"
   }
+
 ]
